@@ -12,8 +12,8 @@ while True:
     if label == "quit":
             print("loop quit successful")
             break   
-    value = float(input("Enter the Value: "))    
-    limit = float(input("Enter the limit: ")) 
+    value = float(input("Failed Attempts: "))    
+    limit = float(input("Total Attempts: ")) 
     while limit == 0:
         print("Error: Limit cannot be zero.")
         limit = float(input("Enter the limit: "))
@@ -36,12 +36,12 @@ while True:
     print(f"  RECORD CHECK  -  {label}")
     print("=" * 34)
 
-    print(f"{'Used':<10} :{value:>10.2f}")
-    print(f"{'Total':<10} :{limit:>10.2f}")
-    print(f"{'Free':<10} :{difference:>10.2f}")
-    print(f"{'Percent':<10} :{percent:>10.2f}%")
-    print(f"{'Status':<10} : {status:>9}")
+    print(f"{'Failed Logins':<17} :{value:>10.2f}")
+    print(f"{'Total Logins':<17} :{limit:>10.2f}")
+    print(f"{'Succesful Logins':<17} :{difference:>10.2f}")
+    print(f"{'Failure Percent':<17} :{percent:>10.2f}%")
+    print(f"{'Status':<17} : {status:>9}")
     print("=" * 34)
 
 
-print(f"Over Limit : {over_limit_counting}")
+print(f"Failed Logins over limit : {over_limit_counting}")
