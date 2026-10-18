@@ -32,8 +32,7 @@ while True:
         limit = float(input("Enter the limit: "))
 
     difference = limit - value   
-    percent = (value/limit) * 100  
-
+    percent = (value/limit) * 100   
     status = " "
     if(percent >=100):
         status = "OVER LIMIT"
