@@ -65,10 +65,10 @@ with open("C:/Users/jayes/Documents/CST1510_CW1/Week 05 - Classes and Objects/LA
         print(f"  RECORD CHECK  -  {record.label}")
         print("=" * 34)
 
-        print(f"{'Failed Logins':<17} :{record.value:>10.2f}")
-        print(f"{'Total Logins':<17} :{record.limit:>10.2f}")
-        print(f"{'Succesful Logins':<17} :{record.difference():>10.2f}")
-        print(f"{'Failure Percent':<17} :{record.percent():>10.2f}%")
+        print(f"{'Value':<17} :{record.value:>10.2f}")
+        print(f"{'Limit':<17} :{record.limit:>10.2f}")
+        print(f"{'Free space':<17} :{record.difference():>10.2f}")
+        print(f"{'Percent used':<17} :{record.percent():>10.2f}%")
         print(f"{'Status':<17} : {current_status:>9}")
         print("=" * 34)
 
